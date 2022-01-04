@@ -1,9 +1,11 @@
 # Efficient Single Image Super-Resolution Using Dual Path Connections with Multiple Scale Learning
 
 This repository is for EMSRDPN introduced in the following paper
+
 Bin-Cheng Yang and [Gangshan Wu](http://mcg.nju.edu.cn), "Efficient Single Image Super-Resolution Using Dual Path Connections with Multiple Scale Learning", [[arxiv]](http://arxiv.org/abs/2112.15386)
 
 It's an extension to a conference paper
+
 Bin-Cheng Yang. 2019. Super Resolution Using Dual Path Connections. In Proceedings of the 27th ACM International Conference on Multimedia (MM ’19), October 21–25, 2019, Nice, France. ACM, NewYork, NY, USA, 9 pages. https://doi.org/10.1145/3343031.3350878
 
 The code is built on [EDSR (PyTorch)](https://github.com/thstkdgus35/EDSR-PyTorch) and tested on Ubuntu 16.04 environment (Python3.7, PyTorch_1.1.0, CUDA9.0) with Titan X/Xp/V100 GPUs.
@@ -16,7 +18,7 @@ The code is built on [EDSR (PyTorch)](https://github.com/thstkdgus35/EDSR-PyTorc
 5. [Citation](#citation)
 6. [Acknowledgements](#acknowledgements)
 
-##Introduction
+## Introduction
 
 Deep convolutional neural networks have been demonstrated to be effective for SISR in recent years. On the one hand, residual connections and dense connections have been used widely to ease forward information and backward gradient flows to boost performance. However, current methods use residual connections and dense connections separately in most network layers in a sub-optimal way. On the other hand, although various networks and methods have been designed to improve computation efficiency, save parameters, or utilize training data of multiple scale factors for each other to boost performance, it either do super-resolution in HR space to have a high computation cost or can not share parameters between models of different scale factors to save parameters and inference time. To tackle these challenges, we propose an efficient single image super-resolution network using dual path connections with multiple scale learning named as EMSRDPN. By introducing dual path connections inspired by Dual Path Networks into EMSRDPN, it uses residual connections and dense connections in an integrated way in most network layers. Dual path connections have the benefits of both reusing common features of residual connections and exploring new features of dense connections to learn a good representation for SISR. To utilize the feature correlation of multiple scale factors, EMSRDPN shares all network units in LR space between different scale factors to learn shared features and only uses a separate reconstruction unit for each scale factor, which can utilize training data of multiple scale factors to help each other to boost performance, meanwhile which can save parameters and support shared inference for multiple scale factors to improve efficiency. Experiments show EMSRDPN achieves better performance and comparable or even better parameter and inference efficiency over SOTA methods.
 
@@ -65,7 +67,7 @@ For more informaiton, please refer to [EDSR(PyTorch)](https://github.com/thstkdg
 
 2. Download model for our paper from [BaiduYun](https://pan.baidu.com/s/1SeHnbEupTBrYdWDSGMJ4dQ)(提取码：d2ov) and place them in 'experiment/'.
 
-3. Cd to 'src', run the following scripts.
+3. Cd to 'src', run the following scripts to test downloaded model.
 
     **You can use scripts in file 'demo.sh' to produce results for our paper.**
 
@@ -115,4 +117,4 @@ If you find the code helpful in your resarch or work, please cite the following 
 }
 ```
 ## Acknowledgements
-This code is built on [EDSR (PyTorch)](https://github.com/thstkdgus35/EDSR-PyTorch). We thank the authors for sharing their codes.
+This code is built on [EDSR (PyTorch)](https://github.com/thstkdgus35/EDSR-PyTorch). We thank the authors for sharing their code.

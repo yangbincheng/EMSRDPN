@@ -63,11 +63,11 @@ For more informaiton, please refer to [EDSR(PyTorch)](https://github.com/thstkdg
     ```
 ## Test
 ### Quick start
-1. Download benchmark dataset from [BaiduYun](https://pan.baidu.com/s/1Bl8TUHywC1HUHoamUFdCew)(提取码：20v5), place them in directory specified by '--dir_data' in src/option.py, untar it.
+1. Download benchmark dataset from [BaiduYun](https://pan.baidu.com/s/1Bl8TUHywC1HUHoamUFdCew) (access code: 20v5), place them in directory specified by '--dir_data' in src/option.py, untar it.
 
-2. Download model for our paper from [BaiduYun](https://pan.baidu.com/s/1SeHnbEupTBrYdWDSGMJ4dQ)(提取码：d2ov) and place them in 'experiment/'.
+2. Download EMSRDPN model for our paper from [BaiduYun](https://pan.baidu.com/s/1SeHnbEupTBrYdWDSGMJ4dQ) (access code: d2ov) and place them in 'experiment/'. Other multiple scale models can be downloaded from [BaiduYun](https://pan.baidu.com/s/1B656d82j4HDJEhXlS_NyQg) (access code: z5ey).
 
-3. Cd to 'src', run the following scripts to test downloaded model.
+3. Cd to 'src', run the following scripts to test downloaded EMSRDPN model.
 
     **You can use scripts in file 'demo.sh' to produce results for our paper.**
 
@@ -87,7 +87,7 @@ For more informaiton, please refer to [EDSR(PyTorch)](https://github.com/thstkdg
     ```
 
 ## Results
-All the test results can be download from [BaiduYun](https://pan.baidu.com/s/11YpqTTE076ns7yMTrkxoNQ)(提取码：oawz).
+All the test results can be download from [BaiduYun](https://pan.baidu.com/s/11YpqTTE076ns7yMTrkxoNQ) (access code: oawz).
 
 ## Citation
 If you find the code helpful in your resarch or work, please cite the following papers.

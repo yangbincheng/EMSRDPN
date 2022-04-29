@@ -33,7 +33,7 @@ Deep convolutional neural networks have been demonstrated to be effective for SI
 
 4. Specify '--dir_data' in src/option.py to your directory to place DIV2K and Flickr2K datasets.
 
-For more informaiton, please refer to [EDSR(PyTorch)](https://github.com/thstkdgus35/EDSR-PyTorch).
+For more informaiton, please refer to [EDSR (PyTorch)](https://github.com/thstkdgus35/EDSR-PyTorch).
 
 
 ### Begin to train

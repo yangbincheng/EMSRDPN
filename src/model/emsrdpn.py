@@ -68,6 +68,8 @@ class EMSRDPN(nn.Module):
         # Gr, Gd, D, C, G
         self.Gr, self.Gd, self.D, self.C, self.G = {
            'A': (64, 64, 16, 4, 64),
+           'B': (137, 0, 16, 4, 0),
+           'C': (0, 125, 16, 4, 125),
         }[args.SRDPNconfig]
 
         self.SFENet1 = nn.Sequential(*[

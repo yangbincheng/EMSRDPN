@@ -71,3 +71,7 @@ code
 experiment
 figs
 test
+
+# params etc stats
+flops_counter_pytorch
+torchstat

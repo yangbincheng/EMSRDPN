@@ -68,8 +68,8 @@ class EMSRDPN(nn.Module):
         # Gr, Gd, D, C, G
         self.Gr, self.Gd, self.D, self.C, self.G = {
            'A': (64, 64, 16, 4, 64),
-           'B': (137, 0, 16, 4, 0),
-           'C': (0, 125, 16, 4, 125),
+           'B': (135, 0, 16, 4, 0),
+           'C': (0, 122, 16, 4, 122),
         }[args.SRDPNconfig]
 
         self.SFENet1 = nn.Sequential(*[
@@ -110,9 +110,7 @@ class EMSRDPN(nn.Module):
 
         x = torch.cat(SRDPBs_out, 1)
         x = self.transition(x)
-        gr = x
         x += f__1
-        gi = x
         results = []
         if self.multi_scale_infer:
             us_input = x

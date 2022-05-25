@@ -75,3 +75,10 @@ test
 # params etc stats
 flops_counter_pytorch
 torchstat
+
+#visualization
+.ipynb_checkpoints
+*.ipynb
+*_vis
+runs
+*tensorwatch*

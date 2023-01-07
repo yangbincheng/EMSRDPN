@@ -47,17 +47,25 @@
 
 #CUDA_VISIBLE_DEVICES=6 python3.7 main.py --scale 2+3+4 --test_scale 2+3+4 --save RDN_MSL_p32_BIx234_DIV2K --model RDN_MSL --epochs 3000 --batch_size 16 --patch_size 32 --n_GPUs 1 --n_threads 16 --SRDPNconfig A --ext sep --data_test Set5 --resume -1 --decay 600-1200-1800-2400-3000 --lr_patch_size --data_range 1-800 --data_train DIV2K --load RDN_MSL_p32_BIx234_DIV2K
 
+#CUDA_VISIBLE_DEVICES=6 python3.7 main.py --scale 2+3+4 --test_scale 2+3+4 --save RDN_MSL_p32_BIx234_DIV2K_latest --model RDN_MSL --epochs 3000 --batch_size 16 --patch_size 32 --n_GPUs 1 --n_threads 16 --SRDPNconfig A --ext sep --data_test Set5+Set14+B100+Urban100+Manga109 --decay 600-1200-1800-2400-3000 --lr_patch_size --data_range 1-800 --data_train DIV2K --pre_train ../experiment/RDN_MSL_p32_BIx234_DIV2K/model/model_latest.pt --test_only --save_results
+
 #CUDA_VISIBLE_DEVICES=7 python3.7 main.py --scale 2 --test_scale 2 --save RDN_MSL_p32_BIx2_DIV2K --model RDN_MSL --epochs 1000 --batch_size 16 --patch_size 32 --n_GPUs 1 --n_threads 16 --SRDPNconfig A --ext sep --data_test Set5 --decay 200-400-600-800-1000 --lr_patch_size --data_range 1-800 --data_train DIV2K
 
 #CUDA_VISIBLE_DEVICES=7 python3.7 main.py --scale 2 --test_scale 2 --save RDN_MSL_p32_BIx2_DIV2K --model RDN_MSL --epochs 1000 --batch_size 16 --patch_size 32 --n_GPUs 1 --n_threads 16 --SRDPNconfig A --ext sep --data_test Set5 --decay 200-400-600-800-1000 --lr_patch_size --data_range 1-800 --data_train DIV2K --load RDN_MSL_p32_BIx2_DIV2K --resume -1
+
+CUDA_VISIBLE_DEVICES=7 python3.7 main.py --scale 2 --test_scale 2 --save RDN_MSL_p32_BIx2_DIV2K_latest --model RDN_MSL --epochs 1000 --batch_size 16 --patch_size 32 --n_GPUs 1 --n_threads 16 --SRDPNconfig A --ext sep --data_test Set5+Set14+B100+Urban100+Manga109 --decay 200-400-600-800-1000 --lr_patch_size --data_range 1-800 --data_train DIV2K --pre_train ../experiment/RDN_MSL_p32_BIx2_DIV2K/model/model_latest.pt --test_only --save_results
 
 #CUDA_VISIBLE_DEVICES=7 python3.7 main.py --scale 3 --test_scale 3 --save RDN_MSL_p32_BIx3_DIV2K --model RDN_MSL --epochs 1000 --batch_size 16 --patch_size 32 --n_GPUs 1 --n_threads 16 --SRDPNconfig A --ext sep --data_test Set5 --decay 200-400-600-800-1000 --lr_patch_size --data_range 1-800 --data_train DIV2K --pre_train ../experiment/RDN_MSL_p32_BIx2_DIV2K/model/model_latest.pt
 
 #CUDA_VISIBLE_DEVICES=7 python3.7 main.py --scale 3 --test_scale 3 --save RDN_MSL_p32_BIx3_DIV2K --model RDN_MSL --epochs 1000 --batch_size 16 --patch_size 32 --n_GPUs 1 --n_threads 16 --SRDPNconfig A --ext sep --data_test Set5 --decay 200-400-600-800-1000 --lr_patch_size --data_range 1-800 --data_train DIV2K --load RDN_MSL_p32_BIx3_DIV2K --resume -1
 
+CUDA_VISIBLE_DEVICES=7 python3.7 main.py --scale 3 --test_scale 3 --save RDN_MSL_p32_BIx3_DIV2K_latest --model RDN_MSL --epochs 1000 --batch_size 16 --patch_size 32 --n_GPUs 1 --n_threads 16 --SRDPNconfig A --ext sep --data_test Set5+Set14+B100+Urban100+Manga109 --decay 200-400-600-800-1000 --lr_patch_size --data_range 1-800 --data_train DIV2K --pre_train ../experiment/RDN_MSL_p32_BIx3_DIV2K/model/model_latest.pt --test_only --save_results
+
 #CUDA_VISIBLE_DEVICES=7 python3.7 main.py --scale 4 --test_scale 4 --save RDN_MSL_p32_BIx4_DIV2K --model RDN_MSL --epochs 1000 --batch_size 16 --patch_size 32 --n_GPUs 1 --n_threads 16 --SRDPNconfig A --ext sep --data_test Set5 --decay 200-400-600-800-1000 --lr_patch_size --data_range 1-800 --data_train DIV2K --pre_train ../experiment/RDN_MSL_p32_BIx2_DIV2K/model/model_latest.pt --reset
 
-CUDA_VISIBLE_DEVICES=7 python3.7 main.py --scale 4 --test_scale 4 --save RDN_MSL_p32_BIx4_DIV2K --model RDN_MSL --epochs 1000 --batch_size 16 --patch_size 32 --n_GPUs 1 --n_threads 16 --SRDPNconfig A --ext sep --data_test Set5 --decay 200-400-600-800-1000 --lr_patch_size --data_range 1-800 --data_train DIV2K --load RDN_MSL_p32_BIx4_DIV2K --resume -1
+#CUDA_VISIBLE_DEVICES=7 python3.7 main.py --scale 4 --test_scale 4 --save RDN_MSL_p32_BIx4_DIV2K --model RDN_MSL --epochs 1000 --batch_size 16 --patch_size 32 --n_GPUs 1 --n_threads 16 --SRDPNconfig A --ext sep --data_test Set5 --decay 200-400-600-800-1000 --lr_patch_size --data_range 1-800 --data_train DIV2K --load RDN_MSL_p32_BIx4_DIV2K --resume -1
+
+CUDA_VISIBLE_DEVICES=7 python3.7 main.py --scale 4 --test_scale 4 --save RDN_MSL_p32_BIx4_DIV2K_latest --model RDN_MSL --epochs 1000 --batch_size 16 --patch_size 32 --n_GPUs 1 --n_threads 16 --SRDPNconfig A --ext sep --data_test Set5+Set14+B100+Urban100+Manga109 --decay 200-400-600-800-1000 --lr_patch_size --data_range 1-800 --data_train DIV2K --pre_train ../experiment/RDN_MSL_p32_BIx4_DIV2K/model/model_latest.pt --test_only --save_results
 
 
 #CUDA_VISIBLE_DEVICES=6,7 python3.7 main.py --scale 2+3+4 --test_scale 2+3+4 --save RCAN_MSL_BIx234_DIV2K --model RCAN_MSL --epochs 3000 --batch_size 16 --patch_size 48 --n_GPUs 2 --n_threads 16 --ext sep --data_test Set5 --reset --decay 600-1200-1800-2400-3000 --lr_patch_size --data_range 1-800 --data_train DIV2K --n_resgroups 10 --n_resblocks 20 --n_feats 64 

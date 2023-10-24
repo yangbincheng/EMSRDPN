@@ -2,7 +2,7 @@
 
 This repository is for EMSRDPN introduced in the following paper
 
-Bin-Cheng Yang and [Gangshan Wu](http://mcg.nju.edu.cn), "Efficient Single Image Super-Resolution Using Dual Path Connections with Multiple Scale Learning", [[arxiv]](http://arxiv.org/abs/2112.15386)
+Bin-Cheng Yang and Gangshan Wu. 2023. Efficient Single-image Super-resolution Using Dual path Connections with Multiple scale Learning. ACM Trans. Multimedia Comput. Commun. Appl. 19, 3, Article 115 (May 2023), 21 pages. https://doi.org/10.1145/3570164
 
 It's an extension to a conference paper
 
@@ -92,14 +92,6 @@ All the test results can be download from [BaiduYun](https://pan.baidu.com/s/11Y
 ## Citation
 If you find the code helpful in your resarch or work, please cite the following papers.
 ```
-@InProceedings{Lim_2017_CVPR_Workshops,
-  author = {Lim, Bee and Son, Sanghyun and Kim, Heewon and Nah, Seungjun and Lee, Kyoung Mu},
-  title = {Enhanced Deep Residual Networks for Single Image Super-Resolution},
-  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-  month = {July},
-  year = {2017}
-}
-
 @inproceedings{2019Super,
   title={Super Resolution Using Dual Path Connections},
   author={ Yang, Bin Cheng },
@@ -107,14 +99,26 @@ If you find the code helpful in your resarch or work, please cite the following 
   year={2019},
 }
 
-@misc{yang2021efficient,
-      title={Efficient Single Image Super-Resolution Using Dual Path Connections with Multiple Scale Learning}, 
-      author={Bin-Cheng Yang and Gangshan Wu},
-      year={2021},
-      eprint={2112.15386},
-      archivePrefix={arXiv},
-      primaryClass={eess.IV}
+@article{10.1145/3570164,
+author = {Yang, Bin-Cheng and Wu, Gangshan},
+title = {Efficient Single-Image Super-Resolution Using Dual Path Connections with Multiple Scale Learning},
+year = {2023},
+issue_date = {May 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {19},
+number = {3},
+issn = {1551-6857},
+url = {https://doi.org/10.1145/3570164},
+doi = {10.1145/3570164},
+abstract = {Deep convolutional neural networks have been demonstrated to be effective for single-image super-resolution in recent years. On the one hand, residual connections and dense connections have been used widely to ease forward information and backward gradient flows to boost performance. However, current methods use residual connections and dense connections separately in most network layers in a sub-optimal way. On the other hand, although various networks and methods have been designed to improve computation efficiency, save parameters, or utilize training data of multiple scale factors for each other to boost performance, they either do super-resolution in high-resolution space to have a high computation cost or cannot share parameters between models of different scale factors to save parameters and inference time. To tackle these challenges, we propose an efficient single-image super-resolution network using dual path connections with multiple scale learning (EMSRDPN). By introducing dual path connections inspired by Dual path Networks into EMSRDPN, it uses residual connections and dense connections in an integrated way in most network layers. Dual path connections have the benefits of both reusing common features of residual connections and exploring new features of dense connections to learn a good representation for single-image super-resolution. To utilize the feature correlation of multiple scale factors, EMSRDPN shares all network units in low-resolution space between different scale factors to learn shared features and only uses a separate reconstruction unit for each scale factor, which can utilize training data of multiple scale factors to help each other to boost performance, meanwhile, which can save parameters and support shared inference for multiple scale factors to improve efficiency. Experiments show EMSRDPN achieves better performance and comparable or even better parameter and inference efficiency over state-of-the-art methods. Code will be available at .},
+journal = {ACM Trans. Multimedia Comput. Commun. Appl.},
+month = {feb},
+articleno = {115},
+numpages = {21},
+keywords = {dual path connection, Single-image super-resolution, multiple scale training and inference}
 }
 ```
+
 ## Acknowledgements
 This code is built on [EDSR (PyTorch)](https://github.com/thstkdgus35/EDSR-PyTorch). We thank the authors for sharing their code.
